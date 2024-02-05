@@ -13,33 +13,55 @@
     <header>
         <h1>Operaciones con cadenas</h1>
         <p>
-            Las operaciones con cadenas son acciones que puedes realizar con secuencias de caracteres en programación
+            Las operaciones con cadenas son acciones que puedes realizar con secuencias de caracteres
         </p>
     </header>
 
     <main>
         <section>
             <h2>Ingrese la cadena</h2>
-            <form>
-                <input type="text" name="cadena" id="cadena" placeholder="Ingrese la cadena">
-                <button type="submit" value="concatenacion">Concatenación</button>
-                <button type="submit" value="exponenciacion">Exponenciacion</button>
-                <button type="submit" value="sufijo">Sufijo</button>
-                <button type="submit" value="prefijo">Prefijo</button>
-                <button type="submit" value="kleen">Cerradura de Kleen</button>
-                <button type="submit" value="positiva">Cerradura Positiva</button>
-                <button type="submit" value="longitud">Longitud</button>
-                <button type="reset">Limpiar cadena</button>
+            <form id="form">
+                <div class="input-cadena">
+                    <div class="inputs">
+                        <input required type="text" name="cadena" id="cadena" placeholder="Ingrese la cadena">
+                        <input type="number" name="n" id="n" placeholder="Ingrese las n repeticiones">
+                    </div>
+                    <button type="reset">Limpiar Campos</button>
+                </div>
+
+                <div>
+                    <h3>Seleccione la operación que desea utilizar</h3>
+                    <section id="options">
+                        <input checked id="kleen" type="radio" name="option" value="kleen">
+                        <label for="kleen">Cerradura de Kleen</label>
+                        <input id="exponenciacion" type="radio" name="option" value="exponenciacion">
+                        <label for="exponenciacion">Exponenciacion</label>
+                        <input id="sufijo" type="radio" name="option" value="sufijo">
+                        <label for="sufijo">Sufijo</label>
+                        <input id="prefijo" type="radio" name="option" value="prefijo">
+                        <label for="prefijo">Prefijo</label>
+                        <input id="positiva" type="radio" name="option" value="positiva">
+                        <label for="positiva">Cerradura Positiva</label>
+                        <input id="longitud" type="radio" name="option" value="longitud">
+                        <label for="longitud">Longitud</label>
+                    </section>
+                </div>
+                <button type="submit">Resolver</button>
             </form>
         </section>
         <section>
-            <h2>Aquí se mostraran los resultados</h2>
+            <div class="results">
+                <h2>Aquí se mostraran los resultados</h2>
+                <div id="result"></div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Instituto Tecnológico Superior de Macuspana </p>
+        <p>Instituto Tecnológico Superior de Macuspana</p>
     </footer>
+
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
