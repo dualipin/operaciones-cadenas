@@ -1,63 +1,77 @@
 @import url(./header.css);
+@import url(./options.css);
 
 :root {
-    --primary-color: #0c0d0d;
-    --secondary-color: #101217;
-    --tertiary-color: #05183c;
-    --text-color: #f5f5f5;
+  --primary-100: #1F3A5F;
+  --primary-200: #4d648d;
+  --primary-300: #acc2ef;
+  --accent-100: #3D5A80;
+  --accent-200: #cee8ff;
+  --text-100: #FFFFFF;
+  --text-200: #e0e0e0;
+  --bg-100: #0F1C2E;
+  --bg-200: #1f2b3e;
+  --bg-300: #374357;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
 
 
 }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-}
-
-.invisible {
-    display: none;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: var(--bg-100);
+  color: var(--text-100);
 }
 
 main {
-    padding: 3em;
-    display: flex;
-    height: 100%;
-    flex: 1;
+  display: flex;
+  flex: 1;
+  padding: 1em;
 }
 
 main section:first-child {
-    width: 30%;
-    height: 100%;
-    padding: 1em;
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    margin: 1em;
+  width: 30%;
+  flex-shrink: 1;
+  padding: 1em;
+  background-color: var(--bg-200);
+  border-radius: 10px;
+  margin: 1em;
+}
+
+main section:first-child h2 {
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 main section:last-child {
-    width: 70%;
-    height: 100%;
-    padding: 1em;
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    margin: 1em;
+  width: 70%;
+  padding: 1em;
+  background-color: var(--bg-200);
+  border-radius: 10px;
+  margin: 1em;
+  flex-shrink: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+#result {
+  text-align: center;
+  padding: 0 5em;
+}
 
 footer {
-    text-align: center;
-    padding: 1em;
-    margin-top: auto;
-    font-size: small;
+  text-align: center;
+  padding: 1em;
+  margin-top: auto;
+  font-size: small;
 }
