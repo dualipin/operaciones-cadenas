@@ -21,6 +21,19 @@
         <section>
             <h2>Ingrese la cadena</h2>
             <form id="form">
+                <div class="option-select">
+                    <h3>Seleccione la operación que desea utilizar</h3>
+
+                    <select name="option">
+                        <option value="kleen">Cerradura de Kleen</option>
+                        <option value="positiva">Cerradura Positiva</option>
+                        <option value="sufijo">Sufijo</option>
+                        <option value="prefijo">Prefijo</option>
+                        <option value="exponenciacion">Exponenciacion</option>
+                        <option value="longitud">Longitud</option>
+                    </select>
+
+                </div>
                 <div class="input-cadena">
                     <div class="inputs">
                         <input required type="text" name="cadena" id="cadena" placeholder="Ingrese la cadena">
@@ -29,25 +42,17 @@
                     <button type="reset">Limpiar Campos</button>
                 </div>
 
-                <div>
-                    <h3>Seleccione la operación que desea utilizar</h3>
-                    <section id="options">
-                        <input checked id="kleen" type="radio" name="option" value="kleen">
-                        <label for="kleen">Cerradura de Kleen</label>
-                        <input id="exponenciacion" type="radio" name="option" value="exponenciacion">
-                        <label for="exponenciacion">Exponenciacion</label>
-                        <input id="sufijo" type="radio" name="option" value="sufijo">
-                        <label for="sufijo">Sufijo</label>
-                        <input id="prefijo" type="radio" name="option" value="prefijo">
-                        <label for="prefijo">Prefijo</label>
-                        <input id="positiva" type="radio" name="option" value="positiva">
-                        <label for="positiva">Cerradura Positiva</label>
-                        <input id="longitud" type="radio" name="option" value="longitud">
-                        <label for="longitud">Longitud</label>
-                    </section>
+
+                <div class="button">
+                    <button type="submit">Resolver</button>
                 </div>
-                <button type="submit">Resolver</button>
             </form>
+
+            <div class="button">
+                <button id="borrar">Borrar resultado</button>
+            </div>
+
+
         </section>
         <section>
             <div class="results">

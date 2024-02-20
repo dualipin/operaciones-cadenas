@@ -12,6 +12,16 @@ const formElement = document.getElementById('form'); // Formulario
 const nElement = document.getElementById('n'); // Input para n
 const optionElement = document.getElementsByName('option'); // Select
 const resultElement = document.getElementById('result'); // Resultado
+const borrarElement = document.getElementById('borrar')
+
+
+borrarElement.addEventListener('click', (e)=>{
+    resultElement.innerHTML = '<h2>Aquí se mostraran los resultados</h2>'
+})
+
+function click(){
+
+}
 
 // Agrega un evento a cada opción del select
 optionElement.forEach((element) => {
