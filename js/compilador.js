@@ -1,4 +1,10 @@
 import Cadena from "./operaciones.js"; // Importa la clase Cadena
+let CONCATENACIONES = [];
+
+export const compilarLR = (cadena) => {
+    //identificarPuntos(cadena);
+    return "Success";
+}
 
 /**
  * Componente que se encarga de realizar la operación de cerradura positiva

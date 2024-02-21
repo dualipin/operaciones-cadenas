@@ -87,6 +87,7 @@
 .input-cadena {
   display: flex;
   flex: 1;
+  flex-direction: column;
   gap: 1em;
   padding: 1em;
   align-items: center;
@@ -123,6 +124,7 @@
   border: none;
   border-radius: 5px;
   font-size: medium;
+  width: 100%;
 }
 
 .button {

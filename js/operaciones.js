@@ -79,7 +79,6 @@ export default class Cadena {
             nuevaCadena += this.cadena // Concatenar cadena
         }
 
-
         return arr // Retornar arreglo
     }
 
